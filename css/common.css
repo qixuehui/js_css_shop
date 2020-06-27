@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?y7ayvj');
+    src:  url('../fonts/icomoon.eot?y7ayvj#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?y7ayvj') format('truetype'),
+      url('../fonts/icomoon.woff?y7ayvj') format('woff'),
+      url('../fonts/icomoon.svg?y7ayvj#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  /* 版心 */
+.w{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+/* 快捷导航模块 */
+.site-nav{
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+    font-size: 12x;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.site-nav-pa{
+    padding: 5px;
+}
+.style_red{
+    color: #c81623;
+}
+.site-nav .w .fl ul li{
+display: inline-block;
+}
+.fr li{
+    float: left;
+} 
+.site-nav .fr li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    /*  */
+    margin: 9px 15px 0;
+}
+.site-nav .w .fr .arrow-icon::after {
+    content: '\ea50';
+    font-family: 'icomoon';
+    margin-left: 5px;
+}
+/* 头部 */
+.header{
+    height: 105px;       
+}
+.logo{
+    float: left;
+    margin-top: 20px;
+    width: 171px;
+    height: 61px;
+    background: url(../images/logo.png) no-repeat;
+}
+.logo a{
+    display: block;
+    width: 171px;
+    height: 61px;
+    /* 如果有字体的话
+      font-size: 0;京东的做法
+     淘宝的做法让文字隐藏 
+    overflow: hidden; */
+    text-indent: -1000px;
+}
+.search{
+    float: left;
+    margin-top: 25px;
+    margin-left: 150px;
+    margin-right: 145px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+.search input {
+    float: left;
+    padding-left: 10px;
+    width: 454px;
+    height: 32px;
+}
+.search button {
+    float: left;
+    width: 80px;
+    height: 32px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+.hotwords a{
+    position: relative;
+    top: 8px;
+    margin-left: 20px;
+}
+.shopcar{
+    float: left;
+    margin-top: 25px;
+    width: 140px;
+    height: 35px;  
+    background-color: #f7f7f7;
+    line-height: 35px;
+}
+.shopcar::before{
+    content: '\e900';
+    font-family: 'icomoon';
+    margin-left: 15px;
+
+}
+.shopcar::after{
+    content: '\e900';
+    font-family: 'icomoon';
+    margin-left: 15px;
+
+}
+.count{
+    position: absolute;
+    top: 21px;
+    right: 58px;
+    height: 14px;
+    line-height: 14px;
+    color: #fff;
+    background-color: #e60012;
+    padding: 0 5px;
+    border-radius: 7px 7px 7px 0;
+}
+.nav{
+    height: 47px;
+    border-bottom: 2px solid #b1191a;
+}
+.dt{
+   float: left;
+    width: 220px;
+    height: 47px;
+    background-color: rgb(177,25,26);
+    font-size: 18px;
+    text-align: center;
+    line-height: 47px;
+    color: white;
+
+}
+.nav .w a{
+    float: left;
+    height: 47px;
+    width: 95px;
+    text-align: center;   
+    line-height: 47px;
+    font-size: 16px;
+}
+.footer{
+    height: 415px;
+    background-color: rgb(245,245,245);
+}
+.footer .hd{
+    height: 80px;
+}
+.footer .bd{
+    height: 185px;
+}
+.footer .bf{
+    height: 93px;
+}
+.footer .w .hd ul li{
+    float: left;
+    width: 300px;
+    height: 50px;
+    padding-left: 35px;
+    padding-top: 25px;
+}
+.footer .w .hd{
+    border-bottom: 1px solid #ccc;
+}
+.footer h5{
+    float: left; 
+    margin-right: 10px;
+}
+.footer h4{
+font-size: 14px;
+font-weight: 700;
+}
+.footer .w .hd h5{
+    height: 50px;
+    width: 50px;
+    background: url(../images/icons.png) no-repeat -252px -2px;
+}
+.footer .w .bd{
+    padding-left: 50px;
+    padding-top: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.footer .w .bd dl{
+    float: left;
+    margin-right: 130px;
+}
+.footer .w .bd dt{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.footer .w  .bd .bd-img{
+    float: right;
+}
+.footer .w  .bd .bd-img p{
+    text-align: center;
+}
+.footer .w .bf p{
+    text-align: center;
+}
+.footer .w .bf .md ul li{
+    display: inline-block;
+}
+.footer .w .bf .md ul{
+    position: absolute;
+    top: 295px;
+    left: 285px;
+}
+.footer .w .bf .md2{
+    position: absolute;
+    top: 330px;
+    left: 303px;
+}
+.footer .w .bf .md3{
+    position: absolute;
+    top: 345px;
+    left: 470px;
+}
+.footer .w .bf ul i{
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #666;
+}
