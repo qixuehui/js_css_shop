@@ -1,100 +1,213 @@
-/* content */
-
-.mian {
-    float: left;
+.main {
+    width: 980px;
     height: 455px;
-    width: 220px;
-}
-
-.mian ul li {
-    height: 30.34px;
-    width: 220px;
-    background-color: rgb(200, 22, 35);
-    font-size: 14px;
-    color: white;
-}
-
-.mian ul li::after {
-    float: right;
-    margin-right: 10px;
-    content: '\e900';
-    font-family: 'icomoon';
-}
-
-.mian ul li a {
-    color: white;
+    margin-left: 220px;
+    margin-top: 10px;
 }
 
 .focus {
     float: left;
+    width: 721px;
     height: 455px;
-    width: 710px;
-    margin-left: 10px;
-    margin-top: 10px;
-    overflow: hidden;
-    /* background: url(../upload/focus1.png) no-repeat; */
-}
-
-.focus img {
-    height: 445px;
+    background-color: purple;
 }
 
 .newsflash {
-    float: left;
+    float: right;
+    width: 250px;
     height: 455px;
-    width: 260px;
 }
 
 .news {
-    height: 163px;
-    width: 250px;
-    border: 1px solid #ccc;
-    margin-left: 10px;
-    margin-top: 10px;
+    height: 165px;
+    border: 1px solid #e4e4e4;
 }
 
-.news-hd h3 {
-    height: 32px;
-    font-weight: 400;
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+
+.news-hd h5 {
+    float: left;
     font-size: 14px;
-    border-bottom: 1px dotted #ccc;
-    padding-left: 15px;
-    line-height: 32px;
+}
+
+.news-hd .more {
+    float: right;
+}
+
+.news-hd .more::after {
+    font-family: 'icomoon';
+    content: '\e920';
+}
+
+.news-bd {
+    padding: 5px 15px 0;
 }
 
 .news-bd ul li {
-    height: 23px;
-    list-style: none;
-    line-height: 22px;
-}
-
-.news-bd ul li a {
-    text-decoration: none;
-    color: #666;
-    font-size: 12px;
-}
-
-.news-bd ul li a:hover {
-    color: red;
-}
-
-.news-bd ul {
-    margin-top: 7px;
-    padding-left: 20px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .lifeservice {
-    height: 205px;
-    margin-left: 10px;
+    overflow: hidden;
+    height: 209px;
+    /* background-color: purple; */
     border: 1px solid #e4e4e4;
-    border-top: 1px solid transparent;
+    border-top: 0;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
 }
 
 .lifeservice ul li i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 12px;
+}
+
+.bargain {
+    margin-top: 5px;
+}
+
+
+/* 推荐模块 */
+
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+
+.recom_hd {
     float: left;
-    width: 24px;
-    height: 28px;
-    margin: 19px;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recom_bd {
+    float: left;
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+.recom_bd ul li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+
+/* 家用电梯模块 */
+
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab_list ul li {
+    float: left;
+}
+
+.tab_list ul li a {
+    margin: 0 15px;
+}
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    margin-right: 10px;
+}
+
+.col_210 ul {
+    padding-left: 12px;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.bb {
+    /* 一般情况下，a如果包含有宽度的盒子，a需要转为块级元素 */
+    display: block;
+    border-bottom: 1px solid #ccc;
 }
 
 .i1 {
@@ -143,129 +256,4 @@
 
 .i12 {
     background: url(../images/icons.png) no-repeat -205px -158px;
-}
-
-.bargain {
-    margin-left: 10px;
-}
-
-
-/* recom */
-
-.recom {
-    margin-top: 3px;
-    margin-bottom: 25px;
-}
-
-.recom_hd img {
-    position: absolute;
-    top: 40px;
-    left: 70px;
-}
-
-.recom_hd {
-    float: left;
-    height: 163px;
-    width: 208px;
-    background-color: #5c5251;
-}
-
-.recom_bd ul li {
-    float: left;
-    width: 248px;
-    height: 163px;
-}
-
-.recom_bd ul .a1 {
-    position: absolute;
-    top: 10px;
-    width: 1px;
-    height: 145px;
-    background-color: #ddd;
-}
-
-.recom_bd ul .a2 {
-    position: absolute;
-    top: 10px;
-    width: 1px;
-    height: 145px;
-    background-color: #ddd;
-}
-
-.recom_bd ul .a3 {
-    position: absolute;
-    top: 10px;
-    width: 1px;
-    height: 145px;
-    background-color: #ddd;
-}
-
-.box_hd {
-    border-bottom: 2px solid rgb(200, 22, 35);
-}
-
-.box_hd h3 {
-    float: left;
-    font-size: 18px;
-    color: #c81623;
-    font-weight: 400;
-}
-
-.box_hd .fr li:nth-child(even) {
-    width: 1px;
-    height: 12px;
-    background-color: #666;
-    /*  */
-    margin: 5px 15px 0;
-}
-
-.floor {
-    border: 10px solid transparent;
-}
-
-.floor .box_bd {
-    float: left;
-    height: 360px;
-}
-
-.col_210 {
-    float: left;
-    width: 210px;
-}
-
-.col_329 {
-    float: left;
-    width: 329px;
-}
-
-.col_221 {
-    float: left;
-    width: 219px;
-}
-
-.col_219 {
-    float: left;
-    width: 220px;
-}
-
-.hb {
-    background-color: rgb(249, 249, 249);
-}
-
-.hb ul li {
-    float: left;
-    height: 26px;
-    width: 85px;
-    margin: 10px;
-    margin-bottom: 0px;
-    border-bottom: 1px solid rgb(204, 204, 204);
-    text-align: center;
-}
-
-.hb img {
-    margin-left: 10px;
-}
-
-.img-md {
-    border-left: 1px solid rgb(204, 204, 204);
 }
