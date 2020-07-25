@@ -6,7 +6,7 @@
 }
 
 .focus {
-    float: left;
+    position: relative;
     width: 721px;
     height: 455px;
     background-color: purple;
@@ -208,6 +208,67 @@
     /* 一般情况下，a如果包含有宽度的盒子，a需要转为块级元素 */
     display: block;
     border-bottom: 1px solid #ccc;
+}
+
+.arrow-l,
+.arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 18px;
+    z-index: 2;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.circle {
+    position: absolute;
+    bottom: 15px;
+    left: 341px;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    /*background-color: #fff;*/
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    border-radius: 50%;
+    /*鼠标经过显示小手*/
+    cursor: pointer;
+}
+
+.current {
+    background-color: red;
+}
+
+.focus {
+    position: relative;
+    width: 721px;
+    height: 455px;
+    overflow: hidden;
+}
+
+.focus ul {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 600%;
+}
+
+.focus ul li {
+    float: left;
 }
 
 .i1 {
