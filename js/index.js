@@ -85,6 +85,7 @@ window.onload = function() {
         }
     })
 
+
     // 9. 左侧按钮做法
     arrow_l.addEventListener('click', function() {
         if (flag) {
